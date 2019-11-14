@@ -179,3 +179,14 @@ INFO _internal.py:122  * Debugger PIN: 294-544-179
 INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:20:37] "GET /上传图片并显示.html HTTP/1.1" 304 -
 INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:20:38] "GET /favicon.ico HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:20:42] "POST /api/v1.0/user/avatar HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_quick_develop/project_name/api_1_0/user/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_quick_develop/project_name/api_1_0/user/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:26:29] "GET /user/image_codes/ HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:26:38] "GET /api/v1.0/user/image_codes/ HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:26:41] "GET /api/v1.0/user/image_codes/ HTTP/1.1" 200 -

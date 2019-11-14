@@ -70,3 +70,7 @@ flask_quick_develop是项目的家目录
     使用fastDFS需要安装一系列的程序
         测试路径
         http://127.0.0.1:5000/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E5%B9%B6%E6%98%BE%E7%A4%BA.html
+        
+# 图片验证码插件
+    访问路径
+    http://127.0.0.1:5000/api/v1.0/user/image_codes/
