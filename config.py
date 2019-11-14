@@ -8,7 +8,7 @@ class Config(object):
     import pymysql
     pymysql.install_as_MySQLdb()
     # 数据库
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:root@127.0.0.1:3306/flask_ihome'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:root@127.0.0.1:3306/test7'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
     # reids

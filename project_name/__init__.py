@@ -64,9 +64,12 @@ def create_app(config_name):
     app.url_map.converters["re"] = ReConverter
 
     # 注册蓝图
-    from project_name import api_1_0  # 放在这里是为了解决循环导入的问题
-    app.register_blueprint(api_1_0.api, url_prefix='/api/v1.0')
-
+    # from project_name import api_1_0  # 放在这里是为了解决循环导入的问题
+    # app.register_blueprint(api_1_0.api, url_prefix='/api/v1.0')
+    from project_name.api_1_0 import order
+    from project_name.api_1_0 import user
+    app.register_blueprint(order.api_order, url_prefix="/api/v1.0/order")
+    app.register_blueprint(user.api_user, url_prefix="/api/v1.0/user")
     # 注册提供静态文件的蓝图
     from project_name.web_html import html
     app.register_blueprint(html)
