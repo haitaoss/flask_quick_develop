@@ -57,3 +57,8 @@ flask_quick_develop是项目的家目录
     # 因为我们的order模块和user模块都导入了db导致一些问题，加上这个就没问题
     # sqlalchemy.exc.InvalidRequestError: Table 'ih_user_profile' is already defined for this MetaData instance. 
     # Specify 'extend_existing=True' to redefine options and columns on an existing Table object.
+    
+# 增加支付宝，接口的调用
+
+    测试路径
+    http://127.0.0.1:5000/支付宝.html

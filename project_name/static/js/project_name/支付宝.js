@@ -12,7 +12,7 @@ $(function () {
 
         //发起ajax post 请求,数据是json数据
         $.ajax({
-                url: "/api/v1.0/pay",
+                url: "/api/v1.0/order/pay",
                 type: "post",
                 data: JSON.stringify(data),
                 dataType: "json",
@@ -22,8 +22,8 @@ $(function () {
 
                 },
                 success: function (resp) {
-                    if (resp == "0") {
-                        alert(resp.errmsg);
+                    if (resp.errno == "0") {
+                        window.open(resp.data.pay_url);
                         // 支付成功
                         return;
                     }
@@ -31,5 +31,16 @@ $(function () {
                 }
             }
         )
+    });
+
+    $("#btn1").click(function () {
+        $.get("/api/v1.0/order/check", function (resp) {
+            if (resp.errno == "0") {
+                // 进行对应的操作
+                alert(resp.errmsg);
+                return;
+            }
+            alert(resp.errmsg);
+        });
     });
 });
