@@ -15,3 +15,6 @@ FAST_DFS_TRACKER_URL = "http://192.168.205.148:8888/"
 
 # fdfs配置文件的路径
 FDFS_CLIENT_CONFIG_PATH = BASE_DIR + "/project_name/utils/fdfs/client.conf"
+
+# 短信验证码的有效期, 单位：秒
+SMS_CODE_EXPIRES = 300

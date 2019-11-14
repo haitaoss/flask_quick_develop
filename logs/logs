@@ -190,3 +190,34 @@ INFO _internal.py:122  * Debugger PIN: 294-544-179
 INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:26:29] "GET /user/image_codes/ HTTP/1.1" 404 -
 INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:26:38] "GET /api/v1.0/user/image_codes/ HTTP/1.1" 200 -
 INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:26:41] "GET /api/v1.0/user/image_codes/ HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_quick_develop/project_name/api_1_0/user/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_quick_develop/project_name/api_1_0/user/views.py', reloading
+INFO _internal.py:122  * Restarting with stat
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:40:40] "GET /api/v1.0/user/发送短信验证码.html HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:40:48] "GET /发送短信验证码.html HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:40:48] "GET /static/js/project_name/发送短信.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:41:09] "GET /发送短信验证码.html HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:41:09] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:41:09] "GET /static/js/project_name/发送短信.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:41:14] "GET /api/v1.0/user/sms_codes/undefined HTTP/1.1" 404 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:42:24] "GET /发送短信验证码.html HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:42:24] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:42:24] "GET /static/js/project_name/发送短信.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:42:24] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:42:28] "GET /api/v1.0/user/sms_codes/undefined HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:43:45] "GET /发送短信验证码.html HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:43:45] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:43:45] "GET /static/js/project_name/发送短信.js HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:43:45] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [14/Nov/2019 20:43:51] "GET /api/v1.0/user/sms_codes/18389356431 HTTP/1.1" 200 -

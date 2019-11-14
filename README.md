@@ -74,3 +74,7 @@ flask_quick_develop是项目的家目录
 # 图片验证码插件
     访问路径
     http://127.0.0.1:5000/api/v1.0/user/image_codes/
+    
+# 发送短信验证码
+    访问路径
+    http://127.0.0.1:5000/%E5%8F%91%E9%80%81%E7%9F%AD%E4%BF%A1%E9%AA%8C%E8%AF%81%E7%A0%81.html

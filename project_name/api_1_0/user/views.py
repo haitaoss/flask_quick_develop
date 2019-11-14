@@ -5,6 +5,8 @@ from project_name.utils.commons import RET
 from project_name.utils.qiniu.qiniu_image_storage import upload_image
 from project_name.utils.captcha.captcha import captcha
 from project_name import constants
+from project_name.libs.yuntongxun.sms import CCP
+import random
 
 
 @api_user.route("/")
@@ -35,7 +37,6 @@ def upload_avatar():
     return jsonify(errno=RET.OK, errmsg="上传成功", data={"image_url": image_url})
 
 
-# GET 127.0.0.1/api/v1.0/user/image_codes/
 @api_user.route("/image_codes/")
 def get_image_code():
     """
@@ -46,3 +47,20 @@ def get_image_code():
     resp = make_response(image_data)
     resp.headers['Content-Type'] = 'image/jpg'
     return resp
+
+
+@api_user.route('/sms_codes/<re(r"1[345678]\d{9}"):mobile>')
+def get_sms_code(mobile):
+    """获取短信验证"""
+
+    # 手机号不存在，则生成短信验证码
+    sms_code = "%06d" % random.randint(0, 999999)  # 最少是6位数，不够补0
+    ccp = CCP()
+    try:
+        #                     要发送的手机号     发送的验证码      几分钟               使用云通讯的那个模板
+        ccp.send_template_sms(mobile, [sms_code, int(constants.SMS_CODE_EXPIRES / 60)], 1)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.THIRDERR,errmsg="第三方错误")
+
+    return jsonify(errno=RET.OK, errmsg="发送成功")
